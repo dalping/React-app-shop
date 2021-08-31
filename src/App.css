@@ -5,6 +5,10 @@
   font-family: "NanumSquare", sans-serif;
 }
 
+.backgound {
+  background-image: url("https://cdn.pixabay.com/photo/2010/12/13/10/05/berries-2277_960_720.jpg");
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,6 +18,10 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.d-block {
+  height: 400px;
 }
 
 .App-header {
@@ -38,4 +46,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.shopinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background: rgb(41, 41, 41);
+  color: white;
+}
+
+.shopinfo_list {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  font-size: 14px;
 }
