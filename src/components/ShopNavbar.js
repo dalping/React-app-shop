@@ -3,7 +3,7 @@ import React from 'react'
 
 function ShopNavbar() {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="danger" variant="dark">
         <Container>
         <Navbar.Brand href="#home">Shop</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
