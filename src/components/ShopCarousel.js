@@ -1,5 +1,5 @@
 import React from 'react'
-import {Carousel} from 'react-bootstrap';
+import {Carousel,Button} from 'react-bootstrap';
 
 function ShopCarousel() {
     return (
@@ -11,6 +11,11 @@ function ShopCarousel() {
       src="https://cdn.pixabay.com/photo/2015/03/26/09/39/cupcakes-690040_960_720.jpg"
       alt="First slide"
     />
+    <Carousel.Caption className="first">
+      <h3>Seoson Off 50~70%</h3>
+      <p>저렴한 가격에 구입하세요.</p>
+      <Button variant="dark">보러가기</Button>
+    </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
