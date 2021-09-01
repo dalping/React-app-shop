@@ -2,21 +2,38 @@
     "sales":[
         {
             "id": 0,
-            "title":"White and Black",
-            "content":"Born in France",
-            "Price":120000
+            "img":"https://codingapple1.github.io/shop/shoes1.jpg",
+            "name":"White and Black",
+            "desc":"Born in France",
+            "price":120000
         },
         {
             "id": 1,
-            "title":"Red Knit",
-            "content":"Born in Seoul",
-            "Price":84000
+            "img":"https://codingapple1.github.io/shop/shoes2.jpg",
+            "name":"Red Knit",
+            "desc":"Born in Seoul",
+            "price":84000
         },
         {
             "id": 2,
-            "title":"Grey Yordan",
-            "content":"Born in States",
-            "Price":96000
+            "img":"https://codingapple1.github.io/shop/shoes3.jpg",
+            "name":"Grey Yordan",
+            "desc":"Born in States",
+            "price":96000
+        },
+        {
+            "id": 3,
+            "img":"https://codingapple1.github.io/shop/shoes4.jpg",
+            "name":"Flower Dance",
+            "desc":"Born in Japan",
+            "price":108000
+        },
+        {
+            "id": 4,
+            "img":"https://codingapple1.github.io/shop/shoes5.jpg",
+            "name":"Pink Running",
+            "desc":"Born in USA",
+            "price":55000
         }
     ]
 }

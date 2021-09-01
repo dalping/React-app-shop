@@ -6,10 +6,8 @@ function ShopInfo() {
             <div className="shopinfo_list">
                 <div>
                     <p className="info_title">사업자 정보</p>
-                    <p>사업자 등록번호 : 220-12-12345</p>
-                    <p>통신판매업신고번호 : 2021-경기성남-0349호</p>
-                    <p>Tel : 1234-5678</p>
-                    <p>Email : romini@naver.com</p>
+                    <p>사업자 등록번호 : 220-12-12345 <br/>통신판매업신고번호 : 2021-경기성남-0349호</p>
+                    <p>Tel : 1234-5678 / Email : romini@naver.com</p>
                 </div>
   
                 <div>
@@ -20,7 +18,7 @@ function ShopInfo() {
                 </div>
             </div>
             <p style={{'fontSize':'0.7em'}}>로미니 사이트의 상품/판매자/쇼핑정보, 컨텐츠, UI 등에 대한 무단 복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠산업 진흥법 등에 의하여 엄격히 금지됩니다.</p>
-            <h7 style={{'fontSize':'0.5em'}}>COPYRIGHT(C) ROMINI ALL RIGHTS RESERVED.</h7>
+            <p style={{'fontSize':'0.7em'}}>COPYRIGHT(C) ROMINI ALL RIGHTS RESERVED.</p>
         </div>
     )
 }

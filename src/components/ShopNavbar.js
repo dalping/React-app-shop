@@ -5,7 +5,7 @@ function ShopNavbar() {
     return (
         <Navbar collapseOnSelect expand="lg" bg="danger" variant="dark">
         <Container>
-        <Navbar.Brand href="#home">Shop</Navbar.Brand>
+        <Navbar.Brand href="#home">🍰Shop</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
