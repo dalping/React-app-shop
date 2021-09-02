@@ -2,38 +2,111 @@
     "sales":[
         {
             "id": 0,
-            "img":"https://codingapple1.github.io/shop/shoes1.jpg",
-            "name":"White and Black",
-            "desc":"Born in France",
-            "price":120000
+            "type":"best new",
+            "img":"https://raw.githubusercontent.com/dalping/Image-Save/main/K-005.bmp",
+            "name":"출근하는 모카곰",
+            "desc":"줄무늬 정장을 입었어요",
+            "price":11000,
+            "stock":10
         },
         {
             "id": 1,
-            "img":"https://codingapple1.github.io/shop/shoes2.jpg",
-            "name":"Red Knit",
+            "type":"best",
+            "img":"https://raw.githubusercontent.com/dalping/Image-Save/main/K-006.bmp",
+            "name":"플라워 댄스",
             "desc":"Born in Seoul",
-            "price":84000
+            "price":5500,
+            "stock":5
         },
         {
             "id": 2,
-            "img":"https://codingapple1.github.io/shop/shoes3.jpg",
-            "name":"Grey Yordan",
-            "desc":"Born in States",
-            "price":96000
+            "type":"best new",
+            "img":"https://raw.githubusercontent.com/dalping/Image-Save/main/K-010.bmp",
+            "name":"핑키베어즈",
+            "desc":"오늘은 우리가 인기스타",
+            "price":5500,
+            "stock":3
         },
         {
             "id": 3,
-            "img":"https://codingapple1.github.io/shop/shoes4.jpg",
-            "name":"Flower Dance",
-            "desc":"Born in Japan",
-            "price":108000
+            "type":"best",
+            "img":"https://raw.githubusercontent.com/dalping/Image-Save/main/K-007.bmp",
+            "name":"삐약이",
+            "desc":"상큼한 레몬맛 쿠키",
+            "price":10000,
+            "stock":100
         },
         {
             "id": 4,
-            "img":"https://codingapple1.github.io/shop/shoes5.jpg",
-            "name":"Pink Running",
+            "type":"best new",
+            "img":"https://raw.githubusercontent.com/dalping/Image-Save/main/K-0013.bmp",
+            "name":"제리의 하루",
+            "desc":"고소한 아몬드 파우더를 사용했어요.",
+            "price":55000,
+            "stock":500
+        },
+        {
+            "id": 5,
+            "type":"best",
+            "img":"https://raw.githubusercontent.com/dalping/Image-Save/main/K-012.bmp",
+            "name":"주문제작",
+            "desc":"소중한 사람에게 선물해요",
+            "price":39000,
+            "stock":40
+        },
+        {
+            "id": 6,
+            "type":"best",
+            "img":"https://raw.githubusercontent.com/dalping/Image-Save/main/K-008.bmp",
+            "name":"시니컬 베어",
             "desc":"Born in USA",
-            "price":55000
+            "price":39000,
+            "stock":30
+        },
+        {
+            "id": 7,
+            "type":"best",
+            "img":"https://raw.githubusercontent.com/dalping/Image-Save/main/K-009.bmp",
+            "name":"파스텔 플라워",
+            "desc":"바삭하고 부드러워요",
+            "price":39000,
+            "stock":1
+        },
+        {
+            "id": 8,
+            "type":"best",
+            "img":"https://raw.githubusercontent.com/dalping/Image-Save/main/K-0015.bmp",
+            "name":"웨딩 베어",
+            "desc":"Marry Me",
+            "price":39000,
+            "stock":400
+        },
+        {
+            "id": 9,
+            "type":"best",
+            "img":"https://raw.githubusercontent.com/dalping/Image-Save/main/%EC%82%B0%ED%83%80.bmp",
+            "name":"산타",
+            "desc":"우는 아이에게는 선물을 안주지",
+            "price":50000,
+            "stock":400
+        },
+        {
+            "id": 10,
+            "type":"best new",
+            "img":"https://raw.githubusercontent.com/dalping/Image-Save/main/%EA%B3%B0%ED%86%A0%EB%81%BC%EB%B0%98%EB%9E%80.bmp",
+            "name":"곰과 토끼의 반란",
+            "desc":"아몬드를 사수하라",
+            "price":80000,
+            "stock":400
+        },
+        {
+            "id": 11,
+            "type":"best",
+            "img":"https://raw.githubusercontent.com/dalping/Image-Save/main/K-014.bmp",
+            "name":"북극곰",
+            "desc":"북극으로 가고싶어",
+            "price":39000,
+            "stock":100
         }
     ]
 }

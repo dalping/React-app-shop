@@ -8,13 +8,13 @@ function ShopCarousel() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://cdn.pixabay.com/photo/2015/03/26/09/39/cupcakes-690040_960_720.jpg"
+      src="https://raw.githubusercontent.com/dalping/Image-Save/main/cou1.bmp"
       alt="First slide"
     />
     <Carousel.Caption className="first">
       <h3>Seoson Off 50~70%</h3>
       <p>저렴한 가격에 구입하세요.</p>
-      <Button variant="dark">보러가기</Button>
+      <Button variant="danger">보러가기</Button>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -27,7 +27,7 @@ function ShopCarousel() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://cdn.pixabay.com/photo/2021/08/01/15/54/berries-6514669_960_720.jpg"
+      src="https://cdn.pixabay.com/photo/2015/03/26/09/39/cupcakes-690040_960_720.jpg"
       alt="Third slide"
     />
   </Carousel.Item>

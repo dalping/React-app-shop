@@ -5,6 +5,7 @@ import Goods from './Goods';
 function ShopList() {
 
     const data = dummy.sales;
+
     return (
         <div className="container shoppage"> 
         <h1>Best</h1>
