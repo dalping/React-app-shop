@@ -6,7 +6,7 @@ function Goods({data,sendData}) {
     let history = useHistory();
 
     return (
-        <div className="col-md-3 goods" onClick={()=>{history.push(`/detail/${data.id}`)}}>
+        <div className="col-md-3 goods" onClick={()=>{history.push(`/react-app-shop/detail/${data.id}`)}}>
             <img src={data.img} width="100%"/>
             &nbsp;
             <div className="icons">

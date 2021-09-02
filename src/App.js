@@ -14,19 +14,19 @@ function App() {
         <ShopNavbar/>
           <Switch>
             {/* 메인페이지 */}
-            <Route exact path="/">
+            <Route exact path="/react-app-shop">
               <ShopCarousel/>
               <ShopList title={"Best"} type={"main"}/>
               <ShopList title={"New"} type={"main"}/>
             </Route>
             {/* 제품 상세 페이지 */}
-            <Route path="/detail/:id">
+            <Route path="/react-app-shop/detail/:id">
               <GoodsDetail/>
             </Route>
-            <Route path="/best">
+            <Route path="/react-app-shop/best">
               <ShopList title={"Best"} type={"all"}/>
             </Route>
-            <Route path="/new">
+            <Route path="/react-app-shop/new">
               <ShopList title={"New"} type={"all"}/>
             </Route>
           </Switch>
