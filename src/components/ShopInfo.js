@@ -17,7 +17,7 @@ function ShopInfo() {
                     <p>Fax : 02-123-1234 / EMail : romini@naver.com</p>
                 </div>
             </div>
-            <p style={{'fontSize':'0.7em'}}>로미니 사이트의 상품/판매자/쇼핑정보, 컨텐츠, UI 등에 대한 무단 복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠산업 진흥법 등에 의하여 엄격히 금지됩니다.</p>
+            <p style={{'fontSize':'0.7em'}}>허니베리 사이트의 상품/판매자/쇼핑정보, 컨텐츠, UI 등에 대한 무단 복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠산업 진흥법 등에 의하여 엄격히 금지됩니다.</p>
             <p style={{'fontSize':'0.7em'}}>COPYRIGHT(C) ROMINI ALL RIGHTS RESERVED.</p>
         </div>
     )
