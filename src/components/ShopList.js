@@ -1,14 +1,25 @@
 import React from 'react';
 import dummy from "../db/data.json";
 import Goods from './Goods';
+import { useHistory } from 'react-router';
 
-function ShopList() {
+function ShopList({type,title}) {
 
-    const data = dummy.sales;
+    let data = dummy.sales;
+    let history = useHistory();
+
+    if(title==="New" || title ==="Best"){
+        data = data.filter( d =>(d.type.indexOf(title.toLowerCase()) !== -1))
+    }
+
+    if(type === "main"){ //상품 8개만 표시
+        data = data.slice(0,8);
+    }
 
     return (
         <div className="container shoppage"> 
-        <h1>Best</h1>
+        <h1>{title}</h1>
+        <p className="more" onClick={()=>{history.push(`/${title}`)}}>more</p>
         <hr/>
             <div className="row">
                 {

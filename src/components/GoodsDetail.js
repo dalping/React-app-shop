@@ -1,16 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import { useHistory,useParams } from 'react-router-dom';
 import dummy from "../db/data.json";
-import styled from 'styled-components';
 import '../Detail.scss'; //CSS파일을 여기에 적용
-
-let BOX = styled.div`
-    padding : 20px;
-`;
-
-let TITLE = styled.h4`
-    font-size : 2em;
-`;
 
 function GoodsDetail() {
     let history = useHistory();

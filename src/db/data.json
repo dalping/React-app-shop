@@ -65,7 +65,7 @@
         },
         {
             "id": 7,
-            "type":"best",
+            "type":"best new",
             "img":"https://raw.githubusercontent.com/dalping/Image-Save/main/K-009.bmp",
             "name":"파스텔 플라워",
             "desc":"바삭하고 부드러워요",
@@ -83,7 +83,7 @@
         },
         {
             "id": 9,
-            "type":"best",
+            "type":"new",
             "img":"https://raw.githubusercontent.com/dalping/Image-Save/main/%EC%82%B0%ED%83%80.bmp",
             "name":"산타",
             "desc":"우는 아이에게는 선물을 안주지",
@@ -92,7 +92,7 @@
         },
         {
             "id": 10,
-            "type":"best new",
+            "type":"new",
             "img":"https://raw.githubusercontent.com/dalping/Image-Save/main/%EA%B3%B0%ED%86%A0%EB%81%BC%EB%B0%98%EB%9E%80.bmp",
             "name":"곰과 토끼의 반란",
             "desc":"아몬드를 사수하라",

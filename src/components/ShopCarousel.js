@@ -12,7 +12,7 @@ function ShopCarousel() {
       alt="First slide"
     />
     <Carousel.Caption className="first">
-      <h3>Seoson Off 50~70%</h3>
+      <h3>Seoson Sale ~50%</h3>
       <p>저렴한 가격에 구입하세요.</p>
       <Button variant="danger">보러가기</Button>
     </Carousel.Caption>

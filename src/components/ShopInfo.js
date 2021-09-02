@@ -6,7 +6,7 @@ function ShopInfo() {
             <div className="shopinfo_list">
                 <div>
                     <p className="info_title">사업자 정보</p>
-                    <p>사업자 등록번호 : 220-12-12345 <br/>통신판매업신고번호 : 2021-경기성남-0349호</p>
+                    <p>사업자 등록번호 : 220-12-12345 <br/>통신판매업신고번호 : 2021-경기성남-1234호</p>
                     <p>Tel : 1234-5678 / Email : romini@naver.com</p>
                 </div>
   

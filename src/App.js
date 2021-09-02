@@ -16,14 +16,18 @@ function App() {
             {/* 메인페이지 */}
             <Route exact path="/">
               <ShopCarousel/>
-              <ShopList/>
+              <ShopList title={"Best"} type={"main"}/>
+              <ShopList title={"New"} type={"main"}/>
             </Route>
             {/* 제품 상세 페이지 */}
             <Route path="/detail/:id">
               <GoodsDetail/>
             </Route>
             <Route path="/best">
-              <ShopList/>
+              <ShopList title={"Best"} type={"all"}/>
+            </Route>
+            <Route path="/new">
+              <ShopList title={"New"} type={"all"}/>
             </Route>
           </Switch>
         <ShopInfo/>

@@ -8,9 +8,17 @@ function Goods({data,sendData}) {
     return (
         <div className="col-md-3 goods" onClick={()=>{history.push(`/detail/${data.id}`)}}>
             <img src={data.img} width="100%"/>
-            <h6>신상품</h6>
+            &nbsp;
+            <div className="icons">
+                {data.type.indexOf('best') !== -1 ? 
+                <div className="icons_best">best</div>:null}
+                &nbsp;
+                {data.type.indexOf('new') !== -1 ? 
+                <div className="icons_new">new</div>:null}
+            </div>
+            {/* <h6>신상품</h6> */}
             <h4>{data.name}</h4>
-            <p>{data.desc}</p>
+            <p style={{color:"grey"}}>{data.desc}</p>
             <p>{data.price}</p>
         </div>
     )
