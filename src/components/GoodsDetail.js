@@ -1,18 +1,44 @@
 import React, { useState,useEffect } from 'react'
 import { useHistory,useParams } from 'react-router-dom';
 import dummy from "../db/data.json";
+import {Nav} from 'react-bootstrap';
 import '../Detail.scss'; //CSS파일을 여기에 적용
+import {CSSTransition} from "react-transition-group";
 
 function GoodsDetail() {
     let history = useHistory();
     let { id } = useParams();
+    const [data, setData] = useState([]);
     const [showAlert,setShowAlert] = useState(true);
-    const data = dummy.sales.filter( num => {return num.id === Number(id)})[0]
-
+    const [onTap,setOnTap] = useState(0);
+    const [tapSwitch,setTapSwitch] = useState(false);
+    
     useEffect(() =>{
-        const 타이머 = setTimeout(()=>{setShowAlert(false)},2000);
-        return () => {clearTimeout(타이머)}
+        const timer = setTimeout(()=>{setShowAlert(false)},2000);
+        return () => {clearTimeout(timer)}
     }, [showAlert]);
+
+    useEffect(()=>{
+         setData(dummy.sales.filter( num => {return num.id === Number(id)})[0]);
+    },[data]);
+
+    if (data.length === 0) return null;
+
+    
+    function TapContent(props){
+
+        useEffect(()=>{
+            props.setTapSwitch(true);
+        })
+
+        if(props.onTap === 0){
+            return <div>안녕하세요</div>
+        } else if(props.onTap === 1){
+            return <div>저는</div>
+        }else{
+            return <div>반가워용</div>
+        }
+    }
 
     return (
         <div className="container detail">
@@ -39,8 +65,29 @@ function GoodsDetail() {
                 }}>돌아가기</button> 
                 </div>
             </div>
+
+            {/* Tap */}
+            <Nav className="mt-5" variant="tabs" defaultActiveKey="link-0">
+                <Nav.Item>
+                    <Nav.Link eventKey="link-0" onClick={()=>{setTapSwitch(false); setOnTap(0)}}>Active</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link eventKey="link-1" onClick={()=>{setTapSwitch(false); setOnTap(1)}}>Option 2</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link eventKey="link-2" onClick={()=>{setTapSwitch(false); setOnTap(2)}}>Option 3</Nav.Link>
+                </Nav.Item>
+            </Nav>
+
+            <CSSTransition in={tapSwitch} classNames="ani" timeout={500}>
+                <TapContent onTap={onTap} setTapSwitch={setTapSwitch}></TapContent>
+            </CSSTransition>
+           
+
         </div> 
     )
+
+
 }
 
 export default GoodsDetail

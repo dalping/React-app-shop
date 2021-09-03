@@ -5,6 +5,9 @@ import ShopNavbar from './components/ShopNavbar';
 import ShopInfo from './components/ShopInfo';
 import ShopList from './components/ShopList';
 import GoodsDetail from './components/GoodsDetail';
+import React from 'react';
+
+
 
 function App() {
 
@@ -14,19 +17,19 @@ function App() {
         <ShopNavbar/>
           <Switch>
             {/* 메인페이지 */}
-            <Route exact path="/react-app-shop">
+            <Route exact path="/React-app-shop">
               <ShopCarousel/>
               <ShopList title={"Best"} type={"main"}/>
               <ShopList title={"New"} type={"main"}/>
             </Route>
             {/* 제품 상세 페이지 */}
-            <Route path="/react-app-shop/detail/:id">
+            <Route path="/React-app-shop/detail/:id">
               <GoodsDetail/>
             </Route>
-            <Route path="/react-app-shop/best">
+            <Route path="/React-app-shop/best">
               <ShopList title={"Best"} type={"all"}/>
             </Route>
-            <Route path="/react-app-shop/new">
+            <Route path="/React-app-shop/new">
               <ShopList title={"New"} type={"all"}/>
             </Route>
           </Switch>

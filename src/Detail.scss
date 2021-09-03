@@ -18,3 +18,13 @@ $main-color: red;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.wow-enter {
+  opacity: 0;
+}
+
+.wow-enter-active {
+  opacity: 1;
+  color: red;
+  transition: all 500ms;
+}

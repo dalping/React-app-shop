@@ -3,6 +3,7 @@ import dummy from "../db/data.json";
 import Goods from './Goods';
 import { useHistory } from 'react-router';
 
+
 function ShopList({type,title}) {
 
     let data = dummy.sales;
@@ -18,8 +19,9 @@ function ShopList({type,title}) {
 
     return (
         <div className="container shoppage"> 
+
         <h1>{title}</h1>
-        <p className="more" onClick={()=>{history.push(`/react-app-shop/${title}`)}}>more</p>
+        <p className="more" onClick={()=>{history.push(`/React-app-shop/${title}`)}}>more</p>
         <hr/>
             <div className="row">
                 {

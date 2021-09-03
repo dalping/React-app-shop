@@ -6,17 +6,15 @@ import { useHistory } from 'react-router';
 function ShopNavbar() {
     let history = useHistory();
 
-
-
     return (
         <Navbar collapseOnSelect expand="lg" bg="danger" variant="dark">
         <Container>
-        <Navbar.Brand onClick={()=>{history.push('/react-app-shop')}}>🍰허니베리</Navbar.Brand>
+        <Navbar.Brand onClick={()=>{history.push('/React-app-shop')}}>🍰허니베리</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link onClick={()=>{history.push('/react-app-shop/best')}}>베스트</Nav.Link>
-            <Nav.Link onClick={()=>{history.push('/react-app-shop/new')}}>신상품</Nav.Link>
+            <Nav.Link onClick={()=>{history.push('/React-app-shop/best')}}>베스트</Nav.Link>
+            <Nav.Link onClick={()=>{history.push('/React-app-shop/new')}}>신상품</Nav.Link>
             <NavDropdown title="카테고리" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">케이크</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">쿠키</NavDropdown.Item>
