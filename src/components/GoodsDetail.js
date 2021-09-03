@@ -4,6 +4,7 @@ import dummy from "../db/data.json";
 import {Nav} from 'react-bootstrap';
 import '../Detail.scss'; //CSS파일을 여기에 적용
 import {CSSTransition} from "react-transition-group";
+import QnA from './QnA';
 
 function GoodsDetail() {
     let history = useHistory();
@@ -32,11 +33,11 @@ function GoodsDetail() {
         })
 
         if(props.onTap === 0){
-            return <div>안녕하세요</div>
+            return <div>상세정보</div>
         } else if(props.onTap === 1){
-            return <div>저는</div>
+            return <div>리뷰</div>
         }else{
-            return <div>반가워용</div>
+            return <QnA></QnA>
         }
     }
 
@@ -45,6 +46,7 @@ function GoodsDetail() {
             
             <div className ="title">
                 <h4 className="red">상품 상세설명</h4>
+                <hr/>
             </div>
             {data.stock <= 5 && showAlert === true? 
             <div className="my_alert">
@@ -52,13 +54,16 @@ function GoodsDetail() {
             </div> : null}
             <div className="row">
                 <div className="col-md-6">
-                <img src={data.img} width="100%"/>
+                <img style={{borderRadius:"10px"}} src={data.img} width="100%"/>
                 </div>
                 <div className="col-md-6 mt-4">
-                <h4 className="pt-5">{data.name}</h4>
+                <h1 className="pt-5">{data.name}</h1>
                 <p>{data.desc}</p>
+                <hr/>
                 <p>{data.price}원</p>
-                <button className="btn btn-danger">주문하기</button> 
+                <button className="btn btn-danger">장바구니</button> 
+                &nbsp;
+                <button className="btn btn-danger">바로구매</button> 
                 &nbsp;
                 <button className="btn btn-danger" onClick={()=>{
                     history.goBack();
@@ -69,13 +74,13 @@ function GoodsDetail() {
             {/* Tap */}
             <Nav className="mt-5" variant="tabs" defaultActiveKey="link-0">
                 <Nav.Item>
-                    <Nav.Link eventKey="link-0" onClick={()=>{setTapSwitch(false); setOnTap(0)}}>Active</Nav.Link>
+                    <Nav.Link eventKey="link-0" onClick={()=>{setTapSwitch(false); setOnTap(0)}}>상세정보</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-1" onClick={()=>{setTapSwitch(false); setOnTap(1)}}>Option 2</Nav.Link>
+                    <Nav.Link eventKey="link-1" onClick={()=>{setTapSwitch(false); setOnTap(1)}}>리뷰</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-2" onClick={()=>{setTapSwitch(false); setOnTap(2)}}>Option 3</Nav.Link>
+                    <Nav.Link eventKey="link-2" onClick={()=>{setTapSwitch(false); setOnTap(2)}}>QnA</Nav.Link>
                 </Nav.Item>
             </Nav>
 

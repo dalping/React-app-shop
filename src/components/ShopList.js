@@ -21,7 +21,8 @@ function ShopList({type,title}) {
         <div className="container shoppage"> 
 
         <h1>{title}</h1>
-        <p className="more" onClick={()=>{history.push(`/React-app-shop/${title}`)}}>more</p>
+        {type === "all"? null : 
+            <p className="more" onClick={()=>{history.push(`/React-app-shop/${title}`)}}>more</p>}
         <hr/>
             <div className="row">
                 {

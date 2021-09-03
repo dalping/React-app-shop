@@ -28,3 +28,32 @@ $main-color: red;
   color: red;
   transition: all 500ms;
 }
+
+.qna {
+  display: flex;
+  flex-direction: column;
+}
+
+.qna_table {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: rgb(165, 161, 161);
+}
+
+.qna_table thead {
+  background-color: rgb(231, 216, 216);
+}
+
+.qna_button {
+  width: 5rem;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.answer {
+  .h5 {
+    font-weight: 600;
+  }
+
+  background-color: rgb(230, 219, 219);
+}
