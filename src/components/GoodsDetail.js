@@ -14,21 +14,20 @@ function GoodsDetail() {
     const [onTap,setOnTap] = useState(0);
     const [tapSwitch,setTapSwitch] = useState(false);
     
-    useEffect(() =>{
+    useEffect(() =>{ //재고임박 알림
         const timer = setTimeout(()=>{setShowAlert(false)},2000);
         return () => {clearTimeout(timer)}
     }, [showAlert]);
 
-    useEffect(()=>{
+    useEffect(()=>{ //해당 상품정보 불러오기
          setData(dummy.sales.filter( num => {return num.id === Number(id)})[0]);
     },[data]);
 
-    if (data.length === 0) return null;
+    if (data.length === 0) return <div>Loding...</div>;
 
-    
     function TapContent(props){
 
-        useEffect(()=>{
+        useEffect(()=>{ //애니메이션 실행
             props.setTapSwitch(true);
         })
 

@@ -6,6 +6,7 @@ import ShopInfo from './components/ShopInfo';
 import ShopList from './components/ShopList';
 import GoodsDetail from './components/GoodsDetail';
 import React from 'react';
+import Cart from './components/Cart';
 
 
 
@@ -31,6 +32,9 @@ function App() {
             </Route>
             <Route path="/React-app-shop/new">
               <ShopList title={"New"} type={"all"}/>
+            </Route>
+            <Route path="/React-app-shop/cart">
+              <Cart/>
             </Route>
           </Switch>
         <ShopInfo/>

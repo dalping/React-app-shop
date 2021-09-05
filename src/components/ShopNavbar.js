@@ -16,15 +16,15 @@ function ShopNavbar() {
             <Nav.Link onClick={()=>{history.push('/React-app-shop/best')}}>베스트</Nav.Link>
             <Nav.Link onClick={()=>{history.push('/React-app-shop/new')}}>신상품</Nav.Link>
             <NavDropdown title="카테고리" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">케이크</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">쿠키</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">사탕</NavDropdown.Item>
+              <NavDropdown.Item onClick={()=>{history.push('/React-app-shop/cake')}}>케이크</NavDropdown.Item>
+              <NavDropdown.Item onClick={()=>{history.push('/React-app-shop/cookie')}}>쿠키</NavDropdown.Item>
+              <NavDropdown.Item onClick={()=>{history.push('/React-app-shop/candy')}}>사탕</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">기타</NavDropdown.Item>
+              <NavDropdown.Item onClick={()=>{history.push('/React-app-shop/etc')}}>기타</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">장바구니</Nav.Link>
+            <Nav.Link onClick={()=>{history.push('/React-app-shop/cart')}}>장바구니</Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
               주문/배송
             </Nav.Link>

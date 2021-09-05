@@ -5,7 +5,7 @@ function QnA() {
     return (
         <div className="qna">
             <h4 style={{marginTop:"20px"}}>QnA</h4>
-            <button className="qna_button">문의하기</button>
+            <button className="btn btn-danger qna_button">문의하기</button> 
             <Table className="qna_table">
                 <thead>
                     <tr>
@@ -30,12 +30,6 @@ function QnA() {
                             <p>고객님, 오늘 주문하신 상품 출고 완료했습니다^^</p>
                         </td>
                     </tr>
-                    {/* <div className="answer">
-                        <h4>안녕하세요</h4>
-                        <p>오늘 배송 안오나요?</p>
-                        <hr/>
-                        <p>오늘 비가 와서 배송하기가 힘들어염</p>
-                    </div> */}
                     <tr>
                         <td>2</td>
                         <td>Jacob</td>
