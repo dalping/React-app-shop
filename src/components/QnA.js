@@ -30,18 +30,6 @@ function QnA() {
                             <p>고객님, 오늘 주문하신 상품 출고 완료했습니다^^</p>
                         </td>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Larry the Bird</td>
-                        <td>Larry the Bird</td>
-                        <td>{String(new Date())}</td>
-                    </tr>
                 </tbody>
             </Table>
         </div>
